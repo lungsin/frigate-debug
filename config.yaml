@@ -1,0 +1,13 @@
+mqtt:
+  host: mqtt
+
+cameras:
+  test:
+    ffmpeg:
+      inputs:
+        - path: /media/frigate/jellyfish.mp4
+          input_args: -re -stream_loop -1 -fflags +genpts
+
+detect:
+  enabled: true
+version: 0.16-0
