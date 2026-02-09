@@ -1,13 +1,78 @@
 mqtt:
-  host: mqtt
-
-cameras:
-  test:
-    ffmpeg:
-      inputs:
-        - path: /media/frigate/jellyfish.mp4
-          input_args: -re -stream_loop -1 -fflags +genpts
+  enabled: false
 
 detect:
   enabled: true
+
+record:
+  enabled: true
+
+cameras:
+  test1:
+    ffmpeg:
+      inputs:
+        - path: /media/frigate/mock_recording/cat.mp4
+          input_args: -re -stream_loop -1 -fflags +genpts
+  test2:
+    ffmpeg:
+      inputs:
+        - path: /media/frigate/mock_recording/cat.mp4
+          input_args: -re -stream_loop -1 -fflags +genpts
+  test3:
+    ffmpeg:
+      inputs:
+        - path: /media/frigate/mock_recording/cat.mp4
+          input_args: -re -stream_loop -1 -fflags +genpts
+  test4:
+    ffmpeg:
+      inputs:
+        - path: /media/frigate/mock_recording/cat.mp4
+          input_args: -re -stream_loop -1 -fflags +genpts
+  test5:
+    ffmpeg:
+      inputs:
+        - path: /media/frigate/mock_recording/cat.mp4
+          input_args: -re -stream_loop -1 -fflags +genpts
+  test6:
+    ffmpeg:
+      inputs:
+        - path: /media/frigate/mock_recording/cat.mp4
+          input_args: -re -stream_loop -1 -fflags +genpts
+  test7:
+    ffmpeg:
+      inputs:
+        - path: /media/frigate/mock_recording/cat.mp4
+          input_args: -re -stream_loop -1 -fflags +genpts
+  test8:
+    ffmpeg:
+      inputs:
+        - path: /media/frigate/mock_recording/cat.mp4
+          input_args: -re -stream_loop -1 -fflags +genpts
+  test9:
+    ffmpeg:
+      inputs:
+        - path: /media/frigate/mock_recording/cat.mp4
+          input_args: -re -stream_loop -1 -fflags +genpts
+  test10:
+    ffmpeg:
+      inputs:
+        - path: /media/frigate/mock_recording/cat.mp4
+          input_args: -re -stream_loop -1 -fflags +genpts
+  test11:
+    ffmpeg:
+      inputs:
+        - path: /media/frigate/mock_recording/cat.mp4
+          input_args: -re -stream_loop -1 -fflags +genpts
+  test12:
+    ffmpeg:
+      inputs:
+        - path: /media/frigate/mock_recording/cat.mp4
+          input_args: -re -stream_loop -1 -fflags +genpts
+  test13:
+    ffmpeg:
+      inputs:
+        - path: /media/frigate/mock_recording/cat.mp4
+          input_args: -re -stream_loop -1 -fflags +genpts
+
+
 version: 0.16-0

@@ -12,10 +12,8 @@ services:
       - /dev/dri/renderD128:/dev/dri/renderD128 # For intel hwaccel, needs to be updated for your hardware
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - ./config:/config
       - ./config.yaml:/config/config.yaml
-      - ./data:/media/frigate
-      - ./jellyfish.mp4:/media/frigate/jellyfish.mp4
+      - ./mock_recording:/media/frigate/mock_recording
       - type: tmpfs # Optional: 1GB of memory, reduces SSD/SD Card wear
         target: /tmp/cache
         tmpfs:
