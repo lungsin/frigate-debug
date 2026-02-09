@@ -7,72 +7,92 @@ detect:
 record:
   enabled: true
 
+go2rtc:
+  ffmpeg:
+    file: "-re -stream_loop -1 -i {input}"
+  streams:
+    cat:
+      - ffmpeg:/media/frigate/mock_recording/cat.mp4#input=file#video=h264
+
 cameras:
   test1:
     ffmpeg:
       inputs:
-        - path: /media/frigate/mock_recording/cat.mp4
-          input_args: -re -stream_loop -1 -fflags +genpts
+        - path: rtsp://127.0.0.1:8554/cat
+          roles:
+            - record
   test2:
     ffmpeg:
       inputs:
-        - path: /media/frigate/mock_recording/cat.mp4
-          input_args: -re -stream_loop -1 -fflags +genpts
+        - path: rtsp://127.0.0.1:8554/cat
+          roles:
+            - record
   test3:
     ffmpeg:
       inputs:
-        - path: /media/frigate/mock_recording/cat.mp4
-          input_args: -re -stream_loop -1 -fflags +genpts
+        - path: rtsp://127.0.0.1:8554/cat
+          roles:
+            - record
   test4:
     ffmpeg:
       inputs:
-        - path: /media/frigate/mock_recording/cat.mp4
-          input_args: -re -stream_loop -1 -fflags +genpts
+        - path: rtsp://127.0.0.1:8554/cat
+          roles:
+            - record
   test5:
     ffmpeg:
       inputs:
-        - path: /media/frigate/mock_recording/cat.mp4
-          input_args: -re -stream_loop -1 -fflags +genpts
+        - path: rtsp://127.0.0.1:8554/cat
+          roles:
+            - record
   test6:
     ffmpeg:
       inputs:
-        - path: /media/frigate/mock_recording/cat.mp4
-          input_args: -re -stream_loop -1 -fflags +genpts
+        - path: rtsp://127.0.0.1:8554/cat
+          roles:
+            - record
   test7:
     ffmpeg:
       inputs:
-        - path: /media/frigate/mock_recording/cat.mp4
-          input_args: -re -stream_loop -1 -fflags +genpts
+        - path: rtsp://127.0.0.1:8554/cat
+          roles:
+            - record
   test8:
     ffmpeg:
       inputs:
-        - path: /media/frigate/mock_recording/cat.mp4
-          input_args: -re -stream_loop -1 -fflags +genpts
+        - path: rtsp://127.0.0.1:8554/cat
+          roles:
+            - record
   test9:
     ffmpeg:
       inputs:
-        - path: /media/frigate/mock_recording/cat.mp4
-          input_args: -re -stream_loop -1 -fflags +genpts
+        - path: rtsp://127.0.0.1:8554/cat
+          roles:
+            - record
   test10:
     ffmpeg:
       inputs:
-        - path: /media/frigate/mock_recording/cat.mp4
-          input_args: -re -stream_loop -1 -fflags +genpts
+        - path: rtsp://127.0.0.1:8554/cat
+          roles:
+            - record
   test11:
     ffmpeg:
       inputs:
-        - path: /media/frigate/mock_recording/cat.mp4
-          input_args: -re -stream_loop -1 -fflags +genpts
+        - path: rtsp://127.0.0.1:8554/cat
+          roles:
+            - record
   test12:
     ffmpeg:
       inputs:
-        - path: /media/frigate/mock_recording/cat.mp4
-          input_args: -re -stream_loop -1 -fflags +genpts
+        - path: rtsp://127.0.0.1:8554/cat
+          roles:
+            - record
   test13:
     ffmpeg:
       inputs:
-        - path: /media/frigate/mock_recording/cat.mp4
-          input_args: -re -stream_loop -1 -fflags +genpts
+        - path: rtsp://127.0.0.1:8554/cat
+          roles:
+            - record
 
 
 version: 0.16-0
